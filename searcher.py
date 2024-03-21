@@ -15,7 +15,7 @@ def search(from_air, to_air, when_depart, when_return, search_days=0):
         temp_return = date_return+timedelta(days=counter)
 
         depart_yymmdd = datetime.strftime(temp_depart, '%y%m%d')
-        depart_yyyy_mm_dd = datetime.strftime(temp_return, '%Y-%m-%d')
+        depart_yyyy_mm_dd = datetime.strftime(temp_depart, '%Y-%m-%d')
 
         returning_yymmdd = datetime.strftime(temp_return, '%y%m%d')
         returning_yyyy_mm_dd = datetime.strftime(temp_return, '%Y-%m-%d')
